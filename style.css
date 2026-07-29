@@ -1,0 +1,124 @@
+:root {
+    --bg-color: #121213;
+    --text-color: #ffffff;
+    --border-color: #3a3a3c;
+    --correct-color: #538d4e;
+    --primary: #1e88e5;
+    --yt-color: #ff0000;
+    --box-bg: #1a1a1b;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: var(--bg-color); 
+    color: var(--text-color); 
+    margin: 0; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+header { 
+    text-align: center; 
+    margin-bottom: 20px; 
+    border-bottom: 1px solid var(--border-color); 
+    width: 100%; 
+    max-width: 600px; 
+    padding-bottom: 10px; 
+}
+
+.search-container { 
+    display: flex; 
+    gap: 10px; 
+    width: 100%; 
+    max-width: 600px; 
+    margin-bottom: 20px; 
+}
+
+.search-container input { 
+    flex: 1; 
+    padding: 12px; 
+    border-radius: 4px; 
+    border: 1px solid var(--border-color); 
+    background: var(--box-bg); 
+    color: white; 
+    font-size: 1rem; 
+}
+
+.search-container button { 
+    background-color: var(--primary); 
+    color: white; 
+    border: none; 
+    padding: 12px 20px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 1rem; 
+}
+
+.main-content { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    width: 100%; 
+    max-width: 600px; 
+}
+
+.lyrics-box { 
+    background: var(--box-bg); 
+    padding: 20px; 
+    border-radius: 8px; 
+    border: 1px solid var(--border-color); 
+    font-size: 1.2rem; 
+    line-height: 2rem; 
+    text-align: center; 
+    max-height: 60vh; 
+    overflow-y: auto; 
+}
+
+.lyrics-box::-webkit-scrollbar { width: 8px; }
+.lyrics-box::-webkit-scrollbar-track { background: transparent; }
+.lyrics-box::-webkit-scrollbar-thumb { background: #555; border-radius: 4px; }
+
+.blank-input { 
+    background: transparent; 
+    border: none; 
+    border-bottom: 2px solid var(--text-color); 
+    color: var(--text-color); 
+    font-size: 1.2rem; 
+    text-align: center; 
+    outline: none; 
+    margin: 0 5px; 
+    font-family: inherit;
+}
+
+.blank-input.correct { 
+    border-color: var(--correct-color); 
+    background-color: rgba(83, 141, 78, 0.2); 
+}
+
+#song-info { color: #a0a0a0; font-size: 1rem; margin-bottom: 15px; text-align: center; }
+
+button.action-btn { 
+    background-color: var(--correct-color); 
+    color: white; 
+    border: none; 
+    padding: 12px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    width: 100%; 
+}
+
+button.yt-btn { 
+    background-color: var(--yt-color); 
+    color: white; 
+    border: none; 
+    padding: 12px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    width: 100%; 
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SongWordle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎵 SongWordle</h1>
+    </header>
+
+    <div class="search-container">
+        <!-- O datalist carrega as sugestões de histórico salvas no JS -->
+        <input type="text" id="search-input" placeholder="Ex: Yellow Coldplay" list="search-history">
+        <datalist id="search-history"></datalist>
+        <button id="search-btn">Buscar</button>
+    </div>
+
+    <div id="song-info"></div>
+
+    <div class="main-content" id="app-content" style="display: none;">
+        <!-- Botão único e limpo para abrir o vídeo em Pop-up -->
+        <button id="yt-popup-btn" class="yt-btn">▶️ Ouvir Música no YouTube (Pop-up)</button>
+        
+        <div class="lyrics-box" id="lyrics-container"></div>
+        
+        <button class="action-btn" id="verify-btn">Verificar Respostas</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

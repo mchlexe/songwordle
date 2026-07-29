@@ -1,0 +1,16 @@
+{
+  "name": "SongWordle",
+  "short_name": "SongWordle",
+  "description": "Pratique inglês com músicas.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#121213",
+  "theme_color": "#1e88e5",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3269/3269817.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
